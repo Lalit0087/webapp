@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %} ASHOKA {% endblock title %}
+
+{% block body %}
+<div class="container-fluid my-4 px-0" >
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="https://source.unsplash.com/1600x900/?phone,contact/1600x500" class="d-block w-100" alt="...">
+     </div>
+  </div>
+  </div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="/static/css/01.css">
+
+<div class="main">
+    <p class="sign" align="center">Contact Us</p>
+    <form method="POST"  action="/contact/">
+      {% csrf_token %}
+      <div class="form-group">
+        <h6 class="text-center"><b>Name</b></h6>
+        <input type="text" class="un" id="name" name="name" placeholder="enter your Name">
+      </div>
+      
+      <div class="form-group">
+        <h6 class="text-center"><b>Email address</b></h6>
+        <input type="email" class="un" id="Email" name="email" placeholder="Enter your Email">
+      </div>
+
+      <div class="form-group">
+        <h6 class="text-center"><b>Contact No</b></h6>
+        <input type="phone" class="un" id="phone" name="phone" placeholder="Enter your Email">
+      </div>
+
+      <div class="form-group">
+        <h6 class="text-center"><b>Kya he be</b></h6>
+        <textarea class="un" id="desc" name="desc"></textarea>
+      </div>
+      
+      <div class="form-group">
+        &nbsp; &nbsp;<input type="submit" name="submit" class="submit" value="Submit"> 
+      </div>
+      
+    </form>
+
+    
+    <!-- <form method="POST" class="form1" action="/contact">
+      
+      <br>
+      &nbsp; &nbsp;<input type="submit" name="submit" class="submit" align="center" value="Submit">          
+      
+    </form> -->
+</div> 
+{% endblock body %}

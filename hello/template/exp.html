@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %} ASHOKA {% endblock title %}
+
+{% block body %}
+<div class="container-fluid my-4" >
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="https://source.unsplash.com/1600x900/?girls/1600x700" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://source.unsplash.com/1600x900/?girls,beach/1600x700" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://source.unsplash.com/1600x900/?girls,water/1600x700" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+</div>
+
+
+<link rel="stylesheet" type="text/css" href="/static/css/01.css">
+
+
+<div class="main">
+    <p class="sign" align="center">You Travel Planner</p>
+    <form method="POST" class="form1" action="adminlogin">
+
+        <h6 class="text-center"><b>From</b></h6>
+        <input type="text" class="un " >
+        <h6 class="text-center"><b>Destination</b></h6>
+        <input type="text" class="un " >
+        <h6 class="text-center"><b>Departure</b></h6>
+        <input type="date" class="un " >
+        <h6 class="text-center"><b>Return</b></h6>
+        <input type="date" class="un " > 
+        <br>
+
+        <div class="container-fluid text-center" >
+        <a href="/a"><img src="https://img.icons8.com/ios-glyphs/30/000000/train.png"/></a>
+        &nbsp; &nbsp; &nbsp;
+        <a href="/a"><img src="https://img.icons8.com/ios-glyphs/30/000000/bus.png"/></a>
+        &nbsp; &nbsp; &nbsp;
+        <a href="/a"><img src="https://img.icons8.com/metro/26/000000/airplane-mode-on.png"/></a>
+        </div>
+        
+        <br>
+        &nbsp; &nbsp;<input type="submit" name="submit" class="submit" align="center" value="Search">          
+      
+      
+    </a></form></div>
+
+{% endblock body %}
