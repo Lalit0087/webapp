@@ -26,3 +26,4 @@ virtualenv==16.7.9
 virtualenv-clone==0.5.3
 webencodings==0.5.1
 wrapt==1.12.1
+whitenoise==5.1.0
