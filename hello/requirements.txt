@@ -12,7 +12,7 @@ lazy-object-proxy==1.4.3
 lxml==4.5.0
 mccabe==0.6.1
 mysqlclient==1.4.6
-pipenv==2018.11.26
+pipenv==2022.1.8
 pylint==2.5.2
 pytz==2019.3
 requests==2.23.0
